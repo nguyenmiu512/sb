@@ -64,11 +64,30 @@ right: 0;
 top: 35%;
 background-color: #fff;
 width: 52px;
-height: 275px;
+height: 187px;
 -webkit-box-shadow: -2.853px 0.927px 6px 0px rgba(129, 129, 129, 0.35);
 -moz-box-shadow: -2.853px 0.927px 6px 0px rgba(129, 129, 129, 0.35);
 box-shadow: -2.853px 0.927px 6px 0px rgba(88, 88, 88, 0.35);
-border: 1px solid #bfbfbf;
+}
+.box-sidebar-right ul li:first-child{
+	text-align: center;
+	background-color: #cf1e26;
+}
+.box-sidebar-right ul li{
+	text-align: center;
+	margin: 0px 0px 5px 0px;
+	border-bottom: 1px solid #ececec;
+	padding: 9px 0px;
+}
+.ic-social .fa-youtube-play{
+	font-size: 30px;
+	color:#fff;
+}
+.ic-social .fa-facebook,
+.ic-social .fa-slideshare,
+.ic-social .fa-linkedin{
+	font-size:20px;
+	color:#404040;
 }
 /****BOX SIDE RIGHT close****/
 
