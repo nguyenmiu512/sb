@@ -330,6 +330,21 @@ margin-top: 600px;
 }
 /****MODAL REGITEr close****/
 
+/**** PROGRESSAR open ***/
+.progressbar li{
+    width: 37%;
+    padding: 12px 0px;
+    border-radius: 50px;
+    margin: 17px 10px;
+    border: inherit;
+}
+.progressbar li:after{
+  content: inherit;
+  width: inherit;
+  height: inherit;
+}
+/**** PROGRESSAR close ***/
+
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (min-device-pixel-ratio: 2),
