@@ -110,7 +110,7 @@
                                     <a href="case-studies.html">Demo & report</a>
                                   </li>
                                   <li class="main-nav last-child">
-                                    <a href="#">Sign up</a>
+                                    <a href="#" data-toggle="modal" data-target="#demoregistration">Sign up</a>
                                   </li>
                                 </ul>
                             </div>
@@ -182,85 +182,6 @@
         <!-- BOX NEWS open -->
         <section class="case-studies">
 
-          <!-- Modal open -->
-            <div id="readbook" class="modal fade" role="dialog">
-              <div class="modal-dialog modal-dialog-custom">
-
-                <!-- Modal content-->
-                <div class="modal-content modal-content-custom">
-                  <div class="modal-header modal-header-custom">
-                    <button type="button" class="close btn-close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title modal-title-custom">Silwash</h4>
-                  </div>
-                  <div class="modal-body  modal-body-custom">
-                    <div id="canvas">
-                      <div class="zoom-icon zoom-icon-in"></div>
-
-                      <div class="magazine-viewport">
-                      <div class="container">
-                        <div class="magazine">
-                          <!-- Next button -->
-                          <div ignore="1" class="next-button"></div>
-                          <!-- Previous button -->
-                          <div ignore="1" class="previous-button"></div>
-                        </div>
-                      </div>
-                      </div>
-
-                      <!-- Thumbnails -->
-                      <div class="thumbnails">
-                      <div>
-                        <ul>
-                          <li class="i">
-                            <img src="assets/pages/1-thumb.jpg" width="76" height="100" class="page-1">
-                            <span>1</span>
-                          </li>
-                          <li class="d">
-                            <img src="assets/pages/2-thumb.jpg" width="76" height="100" class="page-2">
-                            <img src="assets/pages/3-thumb.jpg" width="76" height="100" class="page-3">
-                            <span>2-3</span>
-                          </li>
-                          <li class="d">
-                            <img src="assets/pages/4-thumb.jpg" width="76" height="100" class="page-4">
-                            <img src="assets/pages/5-thumb.jpg" width="76" height="100" class="page-5">
-                            <span>4-5</span>
-                          </li>
-                          <li class="d">
-                            <img src="assets/pages/6-thumb.jpg" width="76" height="100" class="page-6">
-                            <img src="assets/pages/7-thumb.jpg" width="76" height="100" class="page-7">
-                            <span>6-7</span>
-                          </li>
-                          <li class="d">
-                            <img src="assets/pages/8-thumb.jpg" width="76" height="100" class="page-8">
-                            <img src="assets/pages/9-thumb.jpg" width="76" height="100" class="page-9">
-                            <span>8-9</span>
-                          </li>
-                          <li class="d">
-                            <img src="assets/pages/10-thumb.jpg" width="76" height="100" class="page-10">
-                            <img src="assets/pages/11-thumb.jpg" width="76" height="100" class="page-11">
-                            <span>10-11</span>
-                          </li>
-                          <li class="i">
-                            <img src="assets/pages/12-thumb.jpg" width="76" height="100" class="page-12">
-                            <span>12</span>
-                          </li>
-                        <ul>
-                      <div>
-                      </div>
-                      </div>
-                  </div>
-                  </div>
-                  <div class="modal-footer modal-footer-custom">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Đăng nhập</button>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-          </div>
-          <!-- Modal close -->
-
-
             <div class="box-case">
                 <div class="container container-custom">
                   <div class="row">
@@ -291,16 +212,70 @@ For travellers searching for top of the line accommodation, try the Four Seasons
         </section>
         <!-- BOX SOLUTION close -->
 
+        <!-- MODAL register open-->
+        <div class="modal fade in" id="demoregistration" tabindex="-1" role="dialog" aria-hidden="false">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×  </span></button>
+                </div>
+
+                <div class="modal-body text-center">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h4 class="modal-title">SOCIALBEAT - VIET BRANDS' WISE LISTENER</h4>
+                            <p style="font-weight: bold">Cho chúng tôi biết một chút về bạn:</p>
+                        </div>
+                        <div class="col-md-6">
 
 
-        <footer class="ft-mobile">
-            <div class="back-link">
-                <a class="link-vnplus" href="#"></a>
-            </div>
-        </footer>
-        <!-- Footer open-->
+                        </div>
+                        <div class="col-md-6 " style="margin: 8% 0 0% 0;background: #e6e6e6;padding: 19px 0;">
+
+                            <div class="col-md-12 input-popup">
+                                <input type="text" class="form-control" placeholder="First Name" id="txtName">
+                                <input type="text" class="form-control" placeholder="Last Name" id="txtLastName">
+                            </div>
+                            <div class="col-md-12 input-popup">
+                                <input type="text" class="form-control" placeholder="Company" id="txtCompany">
+                                <input type="text" class="form-control" placeholder="Email" id="txtEmail">
+                            </div>
+                            <div class="col-md-12 input-popup">
+                                <input type="text" class="form-control" placeholder="Phone" id="txtMobile">
+                                <select type="text" class="form-control" id="txtEmp">
+                                    <option value="0" selected="">No. of Employees</option>
+                                    <option value="10">1-10</option>
+                                    <option value="50">10-50</option>
+                                    <option value="100">50-100</option>
+                                </select>
+                            </div>
+                            <div class="col-md-12 input-popup">
+                                <select type="text" class="form-control" id="txtAgency">
+                                    <option value="2" selected="">Agency</option>
+                                    <option value="1">Yes</option>
+                                    <option value="0">No</option>
+                                </select>
+                                <button type="button" class="btn btn-primary" onclick="RegDemo()">SUBMIT</button>
+                            </div>
+
+                        </div>
+                    </div>
+                    <p style="margin-top:3%">*Thông tin của bạn hoàn toàn an toàn với chúng tôi, chúng tôi không thích bị spam</p>
+                </div>
+
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div>
+        <!-- MODAL register close-->
+
         <!-- Footer open-->
         <footer class="sitefooter">
+          <div class="onthetop">
+                  <a href="#" class="scrollToTop">
+                    Back to top<i class="fa fa-long-arrow-up" aria-hidden="true"></i>
+                  </a>
+              </div>
+
               <div class="container container-custom">
                 <div class="row">
                   <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 in-footer">
@@ -332,398 +307,33 @@ contact@socialbeat.vn<br />
         <!-- Go to www.addthis.com/dashboard to customize your tools -->
         <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-57e8109fe6250fb5"></script>
 
+        <!-- Document JS ------------------------>
         <script type="text/javascript">
-              function loadApp() {
-
-               	$('#canvas').fadeIn(1000);
-
-               	var flipbook = $('.magazine');
-
-               	// Check if the CSS was already loaded
-
-              	if (flipbook.width()==0 || flipbook.height()==0) {
-              		setTimeout(loadApp, 10);
-              		return;
-              	}
-
-              	// Create the flipbook
-
-              	flipbook.turn({
-
-              			// Magazine width
-
-              			width: 922,
-
-              			// Magazine height
-
-              			height: 600,
-
-              			// Duration in millisecond
-
-              			duration: 1000,
-
-              			// Hardware acceleration
-
-              			acceleration: !isChrome(),
-
-              			// Enables gradients
-
-              			gradients: true,
-
-              			// Auto center this flipbook
-
-              			autoCenter: true,
-
-              			// Elevation from the edge of the flipbook when turning a page
-
-              			elevation: 50,
-
-              			// The number of pages
-
-              			pages: 12,
-
-              			// Events
-
-              			when: {
-              				turning: function(event, page, view) {
-
-              					var book = $(this),
-              					currentPage = book.turn('page'),
-              					pages = book.turn('pages');
-
-              					// Update the current URI
-
-              					Hash.go('page/' + page).update();
-
-              					// Show and hide navigation buttons
-
-              					disableControls(page);
-
-
-              					$('.thumbnails .page-'+currentPage).
-              						parent().
-              						removeClass('current');
-
-              					$('.thumbnails .page-'+page).
-              						parent().
-              						addClass('current');
-
-
-
-              				},
-
-              				turned: function(event, page, view) {
-
-              					disableControls(page);
-
-              					$(this).turn('center');
-
-              					if (page==1) {
-              						$(this).turn('peel', 'br');
-              					}
-
-              				},
-
-              				missing: function (event, pages) {
-
-              					// Add pages that aren't in the magazine
-
-              					for (var i = 0; i < pages.length; i++)
-              						addPage(pages[i], $(this));
-
-              				}
-              			}
-
-              	});
-
-              	// Zoom.js
-
-              	$('.magazine-viewport').zoom({
-              		flipbook: $('.magazine'),
-
-              		max: function() {
-
-              			return largeMagazineWidth()/$('.magazine').width();
-
-              		},
-
-              		when: {
-
-              			swipeLeft: function() {
-
-              				$(this).zoom('flipbook').turn('next');
-
-              			},
-
-              			swipeRight: function() {
-
-              				$(this).zoom('flipbook').turn('previous');
-
-              			},
-
-              			resize: function(event, scale, page, pageElement) {
-
-              				if (scale==1)
-              					loadSmallPage(page, pageElement);
-              				else
-              					loadLargePage(page, pageElement);
-
-              			},
-
-              			zoomIn: function () {
-
-              				$('.thumbnails').hide();
-              				$('.made').hide();
-              				$('.magazine').removeClass('animated').addClass('zoom-in');
-              				$('.zoom-icon').removeClass('zoom-icon-in').addClass('zoom-icon-out');
-
-              				if (!window.escTip && !$.isTouch) {
-              					escTip = true;
-
-              					$('<div />', {'class': 'exit-message'}).
-              						html('<div>Press ESC to exit</div>').
-              							appendTo($('body')).
-              							delay(2000).
-              							animate({opacity:0}, 500, function() {
-              								$(this).remove();
-              							});
-              				}
-              			},
-
-              			zoomOut: function () {
-
-              				$('.exit-message').hide();
-              				$('.thumbnails').fadeIn();
-              				$('.made').fadeIn();
-              				$('.zoom-icon').removeClass('zoom-icon-out').addClass('zoom-icon-in');
-
-              				setTimeout(function(){
-              					$('.magazine').addClass('animated').removeClass('zoom-in');
-              					resizeViewport();
-              				}, 0);
-
-              			}
-              		}
-              	});
-
-              	// Zoom event
-
-              	if ($.isTouch)
-              		$('.magazine-viewport').bind('zoom.doubleTap', zoomTo);
-              	else
-              		$('.magazine-viewport').bind('zoom.tap', zoomTo);
-
-
-              	// Using arrow keys to turn the page
-
-              	$(document).keydown(function(e){
-
-              		var previous = 37, next = 39, esc = 27;
-
-              		switch (e.keyCode) {
-              			case previous:
-
-              				// left arrow
-              				$('.magazine').turn('previous');
-              				e.preventDefault();
-
-              			break;
-              			case next:
-
-              				//right arrow
-              				$('.magazine').turn('next');
-              				e.preventDefault();
-
-              			break;
-              			case esc:
-
-              				$('.magazine-viewport').zoom('zoomOut');
-              				e.preventDefault();
-
-              			break;
-              		}
-              	});
-
-              	// URIs - Format #/page/1
-
-              	Hash.on('^page\/([0-9]*)$', {
-              		yep: function(path, parts) {
-              			var page = parts[1];
-
-              			if (page!==undefined) {
-              				if ($('.magazine').turn('is'))
-              					$('.magazine').turn('page', page);
-              			}
-
-              		},
-              		nop: function(path) {
-
-              			if ($('.magazine').turn('is'))
-              				$('.magazine').turn('page', 1);
-              		}
-              	});
-
-
-              	$(window).resize(function() {
-              		resizeViewport();
-              	}).bind('orientationchange', function() {
-              		resizeViewport();
-              	});
-
-              	// Events for thumbnails
-
-              	$('.thumbnails').click(function(event) {
-
-              		var page;
-
-              		if (event.target && (page=/page-([0-9]+)/.exec($(event.target).attr('class'))) ) {
-
-              			$('.magazine').turn('page', page[1]);
-              		}
-              	});
-
-              	$('.thumbnails li').
-              		bind($.mouseEvents.over, function() {
-
-              			$(this).addClass('thumb-hover');
-
-              		}).bind($.mouseEvents.out, function() {
-
-              			$(this).removeClass('thumb-hover');
-
-              		});
-
-              	if ($.isTouch) {
-
-              		$('.thumbnails').
-              			addClass('thumbanils-touch').
-              			bind($.mouseEvents.move, function(event) {
-              				event.preventDefault();
-              			});
-
-              	} else {
-
-              		$('.thumbnails ul').mouseover(function() {
-
-              			$('.thumbnails').addClass('thumbnails-hover');
-
-              		}).mousedown(function() {
-
-              			return false;
-
-              		}).mouseout(function() {
-
-              			$('.thumbnails').removeClass('thumbnails-hover');
-
-              		});
-
-              	}
-
-
-              	// Regions
-
-              	if ($.isTouch) {
-              		$('.magazine').bind('touchstart', regionClick);
-              	} else {
-              		$('.magazine').click(regionClick);
-              	}
-
-              	// Events for the next button
-
-              	$('.next-button').bind($.mouseEvents.over, function() {
-
-              		$(this).addClass('next-button-hover');
-
-              	}).bind($.mouseEvents.out, function() {
-
-              		$(this).removeClass('next-button-hover');
-
-              	}).bind($.mouseEvents.down, function() {
-
-              		$(this).addClass('next-button-down');
-
-              	}).bind($.mouseEvents.up, function() {
-
-              		$(this).removeClass('next-button-down');
-
-              	}).click(function() {
-
-              		$('.magazine').turn('next');
-
-              	});
-
-              	// Events for the next button
-
-              	$('.previous-button').bind($.mouseEvents.over, function() {
-
-              		$(this).addClass('previous-button-hover');
-
-              	}).bind($.mouseEvents.out, function() {
-
-              		$(this).removeClass('previous-button-hover');
-
-              	}).bind($.mouseEvents.down, function() {
-
-              		$(this).addClass('previous-button-down');
-
-              	}).bind($.mouseEvents.up, function() {
-
-              		$(this).removeClass('previous-button-down');
-
-              	}).click(function() {
-
-              		$('.magazine').turn('previous');
-
-              	});
-
-
-              	resizeViewport();
-
-              	$('.magazine').addClass('animated');
-
+          $(function() {
+            $(".video").click(function () {
+              var theModal = $(this).data("target"),
+              videoSRC = $(this).attr("data-video"),
+              videoSRCauto = videoSRC + "?modestbranding=1&rel=0&controls=0&showinfo=0&html5=1&autoplay=1";
+              $(theModal + ' iframe').attr('src', videoSRCauto);
+              $(theModal + ' button.close').click(function () {
+                $(theModal + ' iframe').attr('src', videoSRC);
+              });
+            });
+            //Check to see if the window is top if not then display button
+          $(window).scroll(function(){
+              if ($(this).scrollTop() > 100) {
+                  $('.scrollToTop').fadeIn();
+              } else {
+                  $('.scrollToTop').fadeOut();
               }
-
-              // Zoom icon
-
-               $('.zoom-icon').bind('mouseover', function() {
-
-               	if ($(this).hasClass('zoom-icon-in'))
-               		$(this).addClass('zoom-icon-in-hover');
-
-               	if ($(this).hasClass('zoom-icon-out'))
-               		$(this).addClass('zoom-icon-out-hover');
-
-               }).bind('mouseout', function() {
-
-               	 if ($(this).hasClass('zoom-icon-in'))
-               		$(this).removeClass('zoom-icon-in-hover');
-
-               	if ($(this).hasClass('zoom-icon-out'))
-               		$(this).removeClass('zoom-icon-out-hover');
-
-               }).bind('click', function() {
-
-               	if ($(this).hasClass('zoom-icon-in'))
-               		$('.magazine-viewport').zoom('zoomIn');
-               	else if ($(this).hasClass('zoom-icon-out'))
-              		$('.magazine-viewport').zoom('zoomOut');
-
-               });
-
-               $('#canvas').hide();
-
-
-              // Load the HTML4 version if there's not CSS transform
-
-              yepnope({
-              	test : Modernizr.csstransforms,
-              	yep: ['../assets/lib/flipbook/js/turn.js'],
-              	nope: ['../assets/lib/flipbook/js/turn.html4.min.js'],
-              	both: ['../assets/lib/flipbook/js/zoom.min.js', '../assets/lib/flipbook/js/magazine.js', '../assets/lib/flipbook/css/magazine.css'],
-              	complete: loadApp
-              });
-              });
-  </script>
+            });
+          //Click event to scroll to top
+          $('.scrollToTop').click(function(){
+              $('html, body').animate({scrollTop : 0},800);
+              return false;
+            });
+          });
+        </script>
 </body>
 
 </html>

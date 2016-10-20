@@ -64,6 +64,24 @@
                   </ul>
               </div>
           </div>
+          <div class="box-skype-right">
+            <div class="in-skype-right">
+                <ul>
+                  <li>
+                    <script type="text/javascript" src="https://secure.skypeassets.com/i/scom/js/skype-uri.js"></script>
+                      <div id="SkypeButton_Call_nickname_1">
+                      <script type="text/javascript">
+                      Skype.ui({
+                      "name": "chat",
+                      "element": "SkypeButton_Call_nickname_1",
+                      "participants": ["nickname"]
+                      });
+                      </script>
+                      </div>
+                  </li>
+                </ul>
+            </div>
+        </div>
             <div class="bg-home">
                 <div class="header">
                   <div class="container container-custom">
@@ -108,7 +126,7 @@
                                       <a href="case-studies.html">Demo & report</a>
                                     </li>
                                     <li class="main-nav last-child">
-                                      <a href="#">Sign up</a>
+                                      <a href="#" data-toggle="modal" data-target="#demoregistration">Sign up</a>
                                     </li>
                                   </ul>
                               </div>
@@ -161,6 +179,10 @@
                                               </li>
                                               <li><a href="case-studies.html">Demo & Report</a>
                                               </li>
+                                              <li class="active">
+                                                <a href="#" data-toggle="modal" data-target="#demoregistration">Sign-up
+                                                </a>
+                                              </li>
                                           </ul>
                                       </div>
                                   </div>
@@ -180,7 +202,7 @@
                                 <h3>it’s always better <br /><span>together</span> integrated</h3>
                                 <div class="btn-bg-home">
                                   <a class="register-now" href="#">Đăng kí ngay</a>
-                                  <a class="view-video" href="#"><span data-icon="&#x49"></span>
+                                  <a class="view-video video" data-video="https://www.youtube.com/embed/HBdcL7YsdBY" data-toggle="modal" data-target="#videoModal" href="#"><span data-icon="&#x49"></span>
   Xem Video</a>
                                 </div>
                             </div>
@@ -189,8 +211,23 @@
                             </div>
                         </div>
                     </div>
+
+                    <!-- VIDEO open-->
+                    <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-body">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <iframe width="100%" height="350" src="" frameborder="0" allowfullscreen></iframe>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- VIDEO close-->
+
                   </div>
                 </div>
+
         </section>
 
         <!-- BOX ABOUT US open -->
@@ -268,14 +305,71 @@
         </section>
         <!-- BOX MY CUSTOMER open -->
 
-        <footer class="ft-mobile">
-            <div class="back-link">
-                <a class="link-vnplus" href="#"></a>
-            </div>
-        </footer>
-        <!-- Footer open-->
+        <!-- MODAL register open-->
+        <div class="modal fade in" id="demoregistration" tabindex="-1" role="dialog" aria-hidden="false">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×  </span></button>
+                </div>
+
+                <div class="modal-body text-center">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h4 class="modal-title">SOCIALBEAT - VIET BRANDS' WISE LISTENER</h4>
+                            <p style="font-weight: bold">Cho chúng tôi biết một chút về bạn:</p>
+                        </div>
+                        <div class="col-md-6">
+
+
+                        </div>
+                        <div class="col-md-6 " style="margin: 8% 0 0% 0;background: #e6e6e6;padding: 19px 0;">
+
+                            <div class="col-md-12 input-popup">
+                                <input type="text" class="form-control" placeholder="First Name" id="txtName">
+                                <input type="text" class="form-control" placeholder="Last Name" id="txtLastName">
+                            </div>
+                            <div class="col-md-12 input-popup">
+                                <input type="text" class="form-control" placeholder="Company" id="txtCompany">
+                                <input type="text" class="form-control" placeholder="Email" id="txtEmail">
+                            </div>
+                            <div class="col-md-12 input-popup">
+                                <input type="text" class="form-control" placeholder="Phone" id="txtMobile">
+                                <select type="text" class="form-control" id="txtEmp">
+                                    <option value="0" selected="">No. of Employees</option>
+                                    <option value="10">1-10</option>
+                                    <option value="50">10-50</option>
+                                    <option value="100">50-100</option>
+                                </select>
+                            </div>
+                            <div class="col-md-12 input-popup">
+                                <select type="text" class="form-control" id="txtAgency">
+                                    <option value="2" selected="">Agency</option>
+                                    <option value="1">Yes</option>
+                                    <option value="0">No</option>
+                                </select>
+                                <button type="button" class="btn btn-primary" onclick="RegDemo()">SUBMIT</button>
+                            </div>
+
+                        </div>
+                    </div>
+                    <p style="margin-top:3%">*Thông tin của bạn hoàn toàn an toàn với chúng tôi, chúng tôi không thích bị spam</p>
+                </div>
+
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div>
+        <!-- MODAL register close-->
+
+
         <!-- Footer open-->
         <footer class="sitefooter">
+          <div class="onthetop">
+                  <a href="#" class="scrollToTop">
+                    Back to top<i class="fa fa-long-arrow-up" aria-hidden="true"></i>
+                  </a>
+              </div>
+
               <div class="container container-custom">
                 <div class="row">
                   <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 in-footer">
@@ -304,33 +398,33 @@ contact@socialbeat.vn<br />
 
         <!-- Document JS ------------------------>
         <script type="text/javascript">
-            $(document).ready(function() {
-            	var timelineBlocks = $('.cd-timeline-block'),
-            		offset = 0.8;
-
-            	//hide timeline blocks which are outside the viewport
-            	hideBlocks(timelineBlocks, offset);
-
-            	//on scolling, show/animate timeline blocks when enter the viewport
-            	$(window).on('scroll', function(){
-            		(!window.requestAnimationFrame)
-            			? setTimeout(function(){ showBlocks(timelineBlocks, offset); }, 100)
-            			: window.requestAnimationFrame(function(){ showBlocks(timelineBlocks, offset); });
-            	});
-
-            	function hideBlocks(blocks, offset) {
-            		blocks.each(function(){
-            			( $(this).offset().top > $(window).scrollTop()+$(window).height()*offset ) && $(this).find('.cd-timeline-img, .cd-timeline-content').addClass('is-hidden');
-            		});
-            	}
-
-            	function showBlocks(blocks, offset) {
-            		blocks.each(function(){
-            			( $(this).offset().top <= $(window).scrollTop()+$(window).height()*offset && $(this).find('.cd-timeline-img').hasClass('is-hidden') ) && $(this).find('.cd-timeline-img, .cd-timeline-content').removeClass('is-hidden').addClass('bounce-in');
-            		});
-            	}
+          $(function() {
+            $(".video").click(function () {
+              var theModal = $(this).data("target"),
+              videoSRC = $(this).attr("data-video"),
+              videoSRCauto = videoSRC + "?modestbranding=1&rel=0&controls=0&showinfo=0&html5=1&autoplay=1";
+              $(theModal + ' iframe').attr('src', videoSRCauto);
+              $(theModal + ' button.close').click(function () {
+                $(theModal + ' iframe').attr('src', videoSRC);
+              });
             });
+            //Check to see if the window is top if not then display button
+			    $(window).scroll(function(){
+			        if ($(this).scrollTop() > 100) {
+			            $('.scrollToTop').fadeIn();
+			        } else {
+			            $('.scrollToTop').fadeOut();
+			        }
+			    	});
+			    //Click event to scroll to top
+			    $('.scrollToTop').click(function(){
+			        $('html, body').animate({scrollTop : 0},800);
+			        return false;
+		    		});
+
+          });
         </script>
+        <script type="text/javascript" src="https://secure.skypeassets.com/i/scom/js/skype-uri.js"></script>
 
         <!-- Go to www.addthis.com/dashboard to customize your tools -->
         <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-57e8109fe6250fb5"></script>

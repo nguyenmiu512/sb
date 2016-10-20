@@ -300,6 +300,36 @@ margin-top: 600px;
 }
 /* CASE close*/
 
+/**** MODAL VIDEO open****/
+#videoModal iframe{
+  width: 100%;
+  height: auto;
+}
+#videoModal .modal-dialog{
+  margin-top:100px;
+}
+/**** MODAL VIDEO close****/
+
+/****MODAL REGITEr open****/
+.form-control, .input-popup button{
+  display: block;
+  width: 100%;
+  margin-top: 15px;
+}
+.modal-body {
+    background: none !important;
+  }
+#demoregistration .modal-dialog{
+  width: 100%;
+}
+#demoregistration	.form-control{
+  width: 100%;
+}
+#demoregistration .input-popup .btn-primary{
+  margin: 20px auto;
+}
+/****MODAL REGITEr close****/
+
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (min-device-pixel-ratio: 2),
