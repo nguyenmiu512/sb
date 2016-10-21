@@ -68,16 +68,17 @@
             <div class="in-skype-right">
                 <ul>
                   <li>
-                    <script type="text/javascript" src="https://secure.skypeassets.com/i/scom/js/skype-uri.js"></script>
-                      <div id="SkypeButton_Call_nickname_1">
-                      <script type="text/javascript">
-                      Skype.ui({
-                      "name": "chat",
-                      "element": "SkypeButton_Call_nickname_1",
-                      "participants": ["nickname"]
-                      });
-                      </script>
+                    <script type="text/javascript" src="assets/lib/skype/skype-uri.js"></script>
+                    <div id="MyDiv">
+                       <a onclick="Skype.tryAnalyzeSkypeUri('call', '0');" href="skype:myskypename?call">
+                          <img role="Button" src="assets/images/ic-skype-hn.png">
+                       </a>
                       </div>
+                      <div id="MyDiv2">
+                         <a onclick="Skype.tryAnalyzeSkypeUri('call', '0');" href="skype:myskypename?call">
+                            <img role="Button" src="assets/images/ic-skype-hcm.png">
+                         </a>
+                        </div>
                   </li>
                 </ul>
             </div>
@@ -201,8 +202,8 @@
                             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text-top-home">
                                 <h3>it’s always better <br /><span>together</span> integrated</h3>
                                 <div class="btn-bg-home">
-                                  <a class="register-now" href="#">Đăng kí ngay</a>
-                                  <a class="view-video video" data-video="https://www.youtube.com/embed/HBdcL7YsdBY" data-toggle="modal" data-target="#videoModal" href="#"><span data-icon="&#x49"></span>
+                                  <a class="register-now" href="#" data-toggle="modal" data-target="#demoregistration">Đăng kí ngay</a>
+                                  <a class="view-video video" data-video="https://www.youtube.com/embed/UCXao7aTDQM" data-toggle="modal" data-target="#videoModal" href="#"><span data-icon="&#x49"></span>
   Xem Video</a>
                                 </div>
                             </div>
@@ -216,14 +217,42 @@
                     <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                       <div class="modal-dialog">
                         <div class="modal-content">
-                          <div class="modal-body">
+                          <div class="modal-body" id="yt-player" >
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            <iframe width="100%" height="350" src="" frameborder="0" allowfullscreen></iframe>
+                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/UCXao7aTDQM" frameborder="0" allowfullscreen></iframe>
                           </div>
                         </div>
                       </div>
                     </div>
                     <!-- VIDEO close-->
+
+                    <!--MODAL THANKOU open-->
+                    <div class="modal fade" id="thankyou" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-body">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <div class="row">
+                              <div class="col-md-12 para-thank">
+                                  <h3>THANK YOU!</h3>
+                                  <p>
+                                    Cảm ơn quý vị đã đăng ký dịch vụ của SocialBeat.<br />
+Chúng tôi sẽ liên hệ lại trong thời gian ngắn nhất. <br />
+<br />
+<span>SocialBeat - Viet Brands' Wise Listener.</span><br />
+Rất hân hạnh được phục vụ.
+                                  </p>
+                                  <a href="#" class="btn-follow"><i class="fa fa-facebook" aria-hidden="true"></i>follow</a>
+                                  <p class="alert-para">
+                                    *Theo dõi Fanpage SocialBeat để cập nhật những xu hướng hot nhất trên Mạng xã hội hàng tuần
+                                  </p>
+                              </div>
+                          </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!--MODAL THANKOU close-->
 
                   </div>
                 </div>
@@ -348,7 +377,7 @@
                                     <option value="1">Yes</option>
                                     <option value="0">No</option>
                                 </select>
-                                <button type="button" class="btn btn-primary" onclick="RegDemo()">SUBMIT</button>
+                                <button type="button" class="btn btn-primary" onclick="RegDemo()" data-dismiss="modal" aria-label="Close" data-toggle="modal" data-target="#thankyou">SUBMIT</button>
                             </div>
 
                         </div>
@@ -398,29 +427,20 @@ contact@socialbeat.vn<br />
 
         <!-- Document JS ------------------------>
         <script type="text/javascript">
+
+
           $(function() {
             $(".video").click(function () {
               var theModal = $(this).data("target"),
-              videoSRC = $(this).attr("data-video"),
-              videoSRCauto = videoSRC + "?modestbranding=1&rel=0&controls=0&showinfo=0&html5=1&autoplay=1";
+              videoSRC = $(this).attr("data-video");
               $(theModal + ' iframe').attr('src', videoSRCauto);
               $(theModal + ' button.close').click(function () {
                 $(theModal + ' iframe').attr('src', videoSRC);
               });
             });
-            //Check to see if the window is top if not then display button
-			    $(window).scroll(function(){
-			        if ($(this).scrollTop() > 100) {
-			            $('.scrollToTop').fadeIn();
-			        } else {
-			            $('.scrollToTop').fadeOut();
-			        }
-			    	});
-			    //Click event to scroll to top
-			    $('.scrollToTop').click(function(){
-			        $('html, body').animate({scrollTop : 0},800);
-			        return false;
-		    		});
+            $('#videoModal').on('hidden.bs.modal', function () {
+                $("#videoModal iframe").attr("src", $("#videoModal iframe").attr("src"));
+            });
 
           });
         </script>

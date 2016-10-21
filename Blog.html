@@ -64,6 +64,29 @@
                     </ul>
                 </div>
             </div>
+
+            <!--SKYPE open-->
+            <div class="box-skype-right">
+              <div class="in-skype-right">
+                  <ul>
+                    <li>
+                      <script type="text/javascript" src="assets/lib/skype/skype-uri.js"></script>
+                      <div id="MyDiv">
+                         <a onclick="Skype.tryAnalyzeSkypeUri('call', '0');" href="skype:myskypename?call">
+                            <img role="Button" src="assets/images/ic-skype-hn.png">
+                         </a>
+                        </div>
+                        <div id="MyDiv2">
+                           <a onclick="Skype.tryAnalyzeSkypeUri('call', '0');" href="skype:myskypename?call">
+                              <img role="Button" src="assets/images/ic-skype-hcm.png">
+                           </a>
+                          </div>
+                    </li>
+                  </ul>
+              </div>
+          </div>
+            <!-- SKYPE close -->
+
             <div class="bg-news-blog">
               <div class="header">
                 <div class="container container-custom">
@@ -317,7 +340,7 @@
                                     <option value="1">Yes</option>
                                     <option value="0">No</option>
                                 </select>
-                                <button type="button" class="btn btn-primary" onclick="RegDemo()">SUBMIT</button>
+                                <button type="button" class="btn btn-primary" onclick="RegDemo()" data-dismiss="modal" aria-label="Close" data-toggle="modal" data-target="#thankyou">SUBMIT</button>
                             </div>
 
                         </div>
@@ -329,6 +352,34 @@
         </div><!-- /.modal-dialog -->
     </div>
         <!-- MODAL register close-->
+
+        <!--MODAL THANKOU open-->
+        <div class="modal fade" id="thankyou" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <div class="row">
+                  <div class="col-md-12 para-thank">
+                      <h3>THANK YOU!</h3>
+                      <p>
+                        Cảm ơn quý vị đã đăng ký dịch vụ của SocialBeat.<br />
+Chúng tôi sẽ liên hệ lại trong thời gian ngắn nhất. <br />
+<br />
+<span>SocialBeat - Viet Brands' Wise Listener.</span><br />
+Rất hân hạnh được phục vụ.
+                      </p>
+                      <a href="#" class="btn-follow"><i class="fa fa-facebook" aria-hidden="true"></i>follow</a>
+                      <p class="alert-para">
+                        *Theo dõi Fanpage SocialBeat để cập nhật những xu hướng hot nhất trên Mạng xã hội hàng tuần
+                      </p>
+                  </div>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--MODAL THANKOU close-->
 
 
         <!-- BOX MY CUSTOMER open -->
@@ -386,29 +437,21 @@ contact@socialbeat.vn<br />
 
     <!-- Document JS ------------------------>
     <script type="text/javascript">
+
+
       $(function() {
         $(".video").click(function () {
           var theModal = $(this).data("target"),
-          videoSRC = $(this).attr("data-video"),
-          videoSRCauto = videoSRC + "?modestbranding=1&rel=0&controls=0&showinfo=0&html5=1&autoplay=1";
+          videoSRC = $(this).attr("data-video");
           $(theModal + ' iframe').attr('src', videoSRCauto);
           $(theModal + ' button.close').click(function () {
             $(theModal + ' iframe').attr('src', videoSRC);
           });
         });
-        //Check to see if the window is top if not then display button
-      $(window).scroll(function(){
-          if ($(this).scrollTop() > 100) {
-              $('.scrollToTop').fadeIn();
-          } else {
-              $('.scrollToTop').fadeOut();
-          }
+        $('#videoModal').on('hidden.bs.modal', function () {
+            $("#videoModal iframe").attr("src", $("#videoModal iframe").attr("src"));
         });
-      //Click event to scroll to top
-      $('.scrollToTop').click(function(){
-          $('html, body').animate({scrollTop : 0},800);
-          return false;
-        });
+
       });
     </script>
 

@@ -319,14 +319,25 @@ margin-top: 600px;
 .modal-body {
     background: none !important;
   }
-#demoregistration .modal-dialog{
-  width: 100%;
+#demoregistration .modal-dialog,
+#thankyou .modal-dialog{
+  width: 93%;
+  margin: 10px auto;
 }
 #demoregistration	.form-control{
   width: 100%;
 }
 #demoregistration .input-popup .btn-primary{
   margin: 20px auto;
+}
+#thankyou .para-thank{
+  padding: 0px;
+}
+#MyDiv2,
+#MyDiv{
+  width: 40px;
+  overflow: hidden;
+  right: 2%;
 }
 /****MODAL REGITEr close****/
 
