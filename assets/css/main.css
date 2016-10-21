@@ -1255,7 +1255,11 @@ opacity: 0.5;
 	padding: 0px;
 	margin: 18px 10px;
 }
-.img-sb-enterprise .fa-heartbeat{
+.img-sb-enterprise .fa-heartbeat,
+.img-sb-enterprise .fa-dot-circle-o,
+.img-sb-enterprise .fa-spinner,
+.img-sb-enterprise .fa-area-chart
+{
 	color:#fff;
 	font-size: 100px;
 }
