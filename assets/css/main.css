@@ -1379,8 +1379,10 @@ input {
 }
 
 .in-all-step h3,
+
 .in-all-step .short-desc {
     text-align: center;
+
 }
 
 .in-all-step h3 {
@@ -1407,10 +1409,12 @@ input {
     font-size: 100px;
 }
 
+
 .img-sb-enterprise {
     box-shadow: 0px 17px 50px 0px rgba(0, 0, 0, 0.19), 0px 12px 15px 0px rgba(0, 0, 0, 0.24);
     background-color: #cf1e26;
     padding: 40px;
+
 }
 
 .brand-health h2,
@@ -1747,6 +1751,18 @@ input {
 }
 
 /**** CASE STUDIE close****/
+
+
+/**** JS 4 STEP****/
+.sb-mcc,
+.sb-perform,
+.sb-audi{
+	display: none;
+	margin: 50px 0px;
+}
+.sb-brand{
+	margin: 50px 0px;
+}
 
 /** ElegantIcons **/
 @font-face {
