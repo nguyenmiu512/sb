@@ -450,10 +450,28 @@
 <script type="text/javascript">
 
     $(document).ready(function () {
-        $('.bxslider').bxSlider({
-            'pager': false
+        var slider = $('.bxslider').bxSlider({
+            'pager': false,
+
         });
+
+        // set keyboard listener
+        $(document).keydown(function(e){
+            if (e.keyCode == 39) // Right arrow
+            {
+                slider.goToNextSlide();
+                return false;
+            }
+            else if (e.keyCode == 37) // left arrow
+            {
+                slider.goToPrevSlide();
+                return false;
+            }
+        });
+
     });
+
+
 
     $(function () {
         $(".video").click(function () {
