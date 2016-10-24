@@ -211,16 +211,22 @@ input {
     background-color: #fff;
     color: #010101;
 }
-
+.navigation-home ul li:hover ul li a{
+  color: #010101;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: block;
+}
+.navigation-home ul li:hover ul li a:hover{
+  color: #b1b1b1;
+}
 .navigation-home ul li ul li {
     display: block;
-    color: #010101;
     width: 140px;
     padding: 10px 0px;
-    font-weight: 600;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+    background-color:#fff;
 }
 
 .navigation-home ul li ul li:hover {
