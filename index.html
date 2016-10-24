@@ -266,13 +266,13 @@ Rất hân hạnh được phục vụ.
                   <div class="row">
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 arrow-down">
                       <div class="eclip-holder hidden-sm hidden-xs ">
-                        <a href="#about" class="smooth">
+                        <a href="#link-box" class="smooth">
                           <img src="assets/images/eclip.png">
                         </a>
                       </div>
                     </div>
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 timeline">
-                      <h3>Về SocialBeat</h3>
+                      <h3 id="link-box">Về SocialBeat</h3>
                       <p class="short-desc">
                         SocialBeat – Công cụ Social Monitoring hiệu quả cho tổ chức, doanh nghiệp.
                       </p>
@@ -446,6 +446,21 @@ contact@socialbeat.vn<br />
 
           });
         </script>
+        <script>
+        // Smooth scrolling for ankers
+        $(".smooth").on('click', function (event) {
+            // store hash
+            var hash = this.hash;
+            if (hash !== "" && hash !== "#myCarousel") {
+                event.preventDefault();
+                $('html, body').animate({
+                    scrollTop: $(this.hash).offset().top - 90
+                }, 500, function () {
+                    window.location.hash = hash;
+                });
+            }
+        });
+    </script>
         <script type="text/javascript" src="https://secure.skypeassets.com/i/scom/js/skype-uri.js"></script>
 
         <!-- Go to www.addthis.com/dashboard to customize your tools -->

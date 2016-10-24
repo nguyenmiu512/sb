@@ -226,7 +226,7 @@ Xem Video</a>
                   <div class="row">
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 arrow-down">
                       <div class="eclip-holder hidden-sm hidden-xs ">
-                        <a href="#about" class="smooth">
+                        <a href="#link-box" class="smooth">
                           <img src="assets/images/eclip.png">
                         </a>
                       </div>
@@ -748,6 +748,21 @@ contact@socialbeat.vn<br />
 
       });
     </script>
+    <script>
+    // Smooth scrolling for ankers
+    $(".smooth").on('click', function (event) {
+        // store hash
+        var hash = this.hash;
+        if (hash !== "" && hash !== "#myCarousel") {
+            event.preventDefault();
+            $('html, body').animate({
+                scrollTop: $(this.hash).offset().top - 90
+            }, 500, function () {
+                window.location.hash = hash;
+            });
+        }
+    });
+</script>
 
         <!-- Go to www.addthis.com/dashboard to customize your tools -->
         <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-57e8109fe6250fb5"></script>
