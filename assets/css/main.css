@@ -74,6 +74,7 @@ input {
     position: fixed;
     right: 0;
     top: 18%;
+    z-index: 99999;
     background-color: #fff;
     width: 52px;
     height: 187px;
@@ -95,6 +96,7 @@ input {
     -webkit-box-shadow: -2.853px 0.927px 6px 0px rgba(129, 129, 129, 0.35);
     -moz-box-shadow: -2.853px 0.927px 6px 0px rgba(129, 129, 129, 0.35);
     box-shadow: -2.853px 0.927px 6px 0px rgba(88, 88, 88, 0.35);
+    z-index: 999;
 }
 
 #MyDiv2 {
@@ -156,7 +158,7 @@ input {
 
 /** LOGO **/
 .top-link-back {
-    margin-top: 50px;
+    margin-top: 36px;
 }
 
 .bg-home .ic-topbar-black,
@@ -176,7 +178,8 @@ input {
 .bg-home .navigation-home,
 .bg-solution .navigation-home {
     float: right;
-    padding-top: 46px;
+    padding-top: 27px;
+    padding-bottom: 18px;
 }
 
 .navigation-home ul li.main-nav {
@@ -1126,8 +1129,11 @@ input {
 }
 
 .add-ft p {
-    color: #828282;
+  color: #828282;
     text-align: right;
+    font-weight: 100;
+    line-height: 21px;
+    font-size: 14px;
 }
 
 .add-ft p span {
@@ -1496,8 +1502,8 @@ input {
 
 .bg-news-blog .navigation-home {
     float: right;
-    padding-top: 46px;
-    padding-bottom: 20px;
+    padding-top: 27px;
+    padding-bottom: 18px;
 }
 
 .bg-news-blog .navigation-home ul .main-nav:hover,
@@ -1513,16 +1519,27 @@ input {
 .bg-news-blog .navigation-home ul .main-nav:last-child {
 }
 
-.header {
+.bg-home .header {
     box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.16), 0px 2px 5px 0px rgba(0, 0, 0, 0.26);
+    position: fixed;
+    width: 100%;
+    background-color: #000;
+    z-index: 66;
+}
+.bg-news-blog .header{
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    z-index: 66;
 }
 
-.bg-news-blog .navigation-home ul .main-nav {
+.bg-news-blog .navigation-home ul .main-nav
+{
 }
 
 .bg-news-blog .top-link-back {
-    margin-top: 32px;
-    padding-left: 0px;
+  margin-top: 14px;
+  padding-left: 0px;
 }
 
 .box-news ul {
@@ -3368,4 +3385,7 @@ you can use the generic selector below, but it's slower:
     -o-box-shadow: none;
     border: none;
     z-index: -1;
+}
+.case-studies {
+  padding-top: 86px;
 }
