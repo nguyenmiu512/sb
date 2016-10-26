@@ -3384,7 +3384,6 @@ you can use the generic selector below, but it's slower:
     -moz-box-shadow: none;
     -o-box-shadow: none;
     border: none;
-    z-index: -1;
 }
 .case-studies {
   padding-top: 86px;
