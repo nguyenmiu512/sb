@@ -1604,6 +1604,20 @@ line-height: 25px;
     padding: 5px 10px;
     text-align: center;
 }
+.btn-viewmore{
+  margin-top:28px;
+  text-align: center;
+}
+.btn-viewmore .viewmore{
+  background-color: #cf1e26;
+  color: #fff;
+  border-radius: 50px;
+  margin: 8px auto;
+  text-align: center;
+  padding: 7px 20px;
+  font-weight: 100;
+  font-size: 16px;
+}
 
 /****DETAIL OPEN****/
 .detail-news {
