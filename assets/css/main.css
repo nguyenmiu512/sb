@@ -1657,8 +1657,8 @@ line-height: 25px;
 }
 
 .text-detail img {
-    width: 590px;
-    height: 273px;
+width: 100%;
+    height: auto;
     overflow: hidden;
     margin: 10px 0px 20px 0px;
 }
