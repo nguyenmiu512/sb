@@ -405,7 +405,11 @@ input {
     -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
     transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 }
-
+#demoregistration .width-bottom{
+    width: 91%;
+    margin: 0px 0px 0px 0px;
+    height: 64px;
+}
 #demoregistration .input-popup select {
     border-radius: 0;
     color: #000;
