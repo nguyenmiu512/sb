@@ -17,9 +17,61 @@
   .menu-mobile{
     display: none;
   }
+
+/*Home*/
+.navigation-home ul li.main-nav{
+  margin-right:0px;
+}
+
+/*SOLUTION*/
+.text-top-home h3{
+  font-size: 23px;
+}
+.img-why-choose{
+  left: -29%;
+}
+.ic-why-choose ul li{
+  width: 45%;
+}
+
+/*DEMO*/
+.text-case h2{
+  font-size: 40px;
+}
+.view-more .btn-readmore{
+  padding: 10px 35px;
+}
+
+/*FOOTER*/
+.add-ft p{
+  font-size: 12px;
+}
+
+/*SIGNUP*/
+#demoregistration .modal-body{
+  padding: 15px 15px 0px 15px;
+}
 }
 @media (min-width: 320px) and (max-width: 768px) {
     /*NAV BAR*/
+    .open>.dropdown-menu {
+    display: block !important;
+  }
+  .navbar-nav>li>.dropdown-menu{
+    position: static;
+    float: none;
+    width: auto;
+    margin-top: 0;
+    background-color: transparent;
+    border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    display: block !important;
+  }
+.dropdown-menu>li>a{
+      color: #6f6f6f;
+}
+
     .container{
       width: 100%;
     }
@@ -58,6 +110,7 @@
   }
 .menu-mobile .navbar-inverse{
   background-color: #010101;
+  padding-bottom: 21px;
 }
 .menu-mobile2 .navbar-inverse{
   background-color: #fff;
@@ -162,6 +215,10 @@ margin: 17px 0px 0px 0px;
 }
 .box-sidebar-right{
   z-index: 999;
+  height: 148px;
+  top: 34%;
+  right: -13px;
+  opacity: 0.8;
 }
 .in-box-customer{
   margin-left: 10px;
@@ -261,6 +318,16 @@ margin-top: 0px;
 /*NEWS & BLOG close*/
 
 /*DETAIL open*/
+.text-detail{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.ic-social .fa-youtube-play{
+  font-size: 20px;
+}
+.box-sidebar-right ul li{
+  padding: 5px 23px 5px 6px;
+}
 .detail-news{
   padding-top: 73px;
 }

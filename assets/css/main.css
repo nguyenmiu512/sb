@@ -256,11 +256,15 @@ input {
 }
 
 .navigation-home ul li.main-nav:hover,
-.navigation-home ul li.active,
-.navigation-home ul li.last-child {
+.navigation-home ul li.active {
     border: 1px solid #fff;
     padding: 10px;
 }
+.navigation-home ul li.last-child{
+  background-color:#cf1e26;
+}
+.navigation-home ul li.last-child:hover{
+  border:inherit;}
 
 .navigation-home ul li:last-child a:hover {
     border: none;
@@ -362,7 +366,7 @@ input {
 
 #demoregistration .modal-body {
     position: relative;
-    padding: 20px;
+    padding: 15px 15px 0px 9px;
     background: url('../images/bg-POPUP.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -417,7 +421,7 @@ input {
 }
 
 #demoregistration .modal-body p {
-    margin-top: 6%;
+    margin: 3% 0px;
 }
 
 #demoregistration .btn-primary {
@@ -563,12 +567,14 @@ input {
 }
 
 .text-top-home h3 {
-    font-family: 'UTM Bebas', sans-serif;
-    font-size: 36px;
-    color: #fff;
-    margin-top: 100px;
-    letter-spacing: 6px;
-    line-height: 52px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 30px;
+  color: #fff;
+  margin-top: 100px;
+  letter-spacing: 5px;
+  line-height: 58px;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
 .text-top-home h3 span {
@@ -1131,6 +1137,16 @@ input {
 .add-ft {
     border-right: 1px solid #616161;
 }
+.in-footer .logo-footer .desc-ft {
+    color: #828282;
+    font-weight: 100;
+    line-height: 21px;
+    font-size: 12px;
+  }
+  .in-footer .logo-footer .desc-ft a {
+    text-decoration: underline;
+    color: #828282;
+}
 
 .add-ft p {
   color: #828282;
@@ -1519,11 +1535,12 @@ line-height: 25px;
 }
 
 .bg-news-blog .navigation-home ul .main-nav:last-child {
-    border: 1px solid #777;
+  border: 1px solid #cf1e26;
     border-radius: 20px;
 }
 
-.bg-news-blog .navigation-home ul .main-nav:last-child {
+.bg-news-blog .navigation-home ul .main-nav:last-child a {
+  color:#fff;
 }
 
 .bg-home .header,
@@ -1625,7 +1642,7 @@ line-height: 25px;
 
 /****DETAIL OPEN****/
 .detail-news {
-    background: url('../images/bg-detail.jpg') no-repeat 0 0;
+    background: url('../images/bg-detail.jpg') no-repeat center center;
     height: 503px;
     background-size: cover;
 }
