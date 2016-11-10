@@ -110,7 +110,6 @@
   }
 .menu-mobile .navbar-inverse{
   background-color: #010101;
-  padding-bottom: 21px;
 }
 .menu-mobile2 .navbar-inverse{
   background-color: #fff;
@@ -347,6 +346,15 @@ margin-top: 0px;
 .hot-news{
   margin-top:25px;
 }
+.box-news-detail h3{
+  line-height: 31px;
+  font-size: 21px;
+}
+.box-news-detail{
+  padding-top: 28%;
+  padding-left: 20px;
+  padding-right: 20px;
+}
 /*DETAIL close*/
 
 /* CASE open*/
@@ -436,11 +444,11 @@ screen and (-webkit-device-pixel-ratio: 1.5) {
         height: 96px;
         margin-top: 0;
     }
-    .top-link-back .ic-topbar .logo-vnp-back{
-      background: url('../images/ic-back@2x.png') no-repeat center 5px;
-      background-size:20px 20px;
-      width: 100%;
-      height:40px;
+    .menu-mobile  .navbar-logo-mobile{
+      background: url('../images/logo-mobile@2x.png') no-repeat center 5px;
+      background-size:180px 43px;
+      width: 180px;
+      height: 43px;
       display: block;
     }
     input[type=search]{
@@ -450,11 +458,11 @@ screen and (-webkit-device-pixel-ratio: 1.5) {
       height: 40px;
       display: block;
     }
-    .ic-topbar .logo-trend{
-      background: url('../images/logo-trend@2x.png') no-repeat center 5px;
-      background-size:85px 17px;
-      width: 100%;
-      height: 34px;
+    .menu-mobile2  .navbar-logo-mobile{
+      background: url('../images/logo-mobile-white@2x.png') no-repeat center 5px;
+      background-size:180px 43px;
+      width: 180px;
+      height: 43px;
       display: block;
     }
     .ic-topbar .logo-trend img{
