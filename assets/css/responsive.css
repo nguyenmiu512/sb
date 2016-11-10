@@ -120,7 +120,6 @@ border: inherit;
       background-color: #777;
 }
     .sitefooter{
-      display: none;
     }
     .top-link-back .ic-topbar a{
       background: url('../images/ic-back.png') no-repeat 0 0;
@@ -474,13 +473,6 @@ screen and (-webkit-device-pixel-ratio: 1.5) {
       width: 294px;
       display: block;
       height: 68px;
-    }
-    .in-footer .logo-footer {
-        background: url('../images/logo-footer@2x.png') no-repeat 11px 8px;
-        background-size: 100px 96px;
-        width: 140px;
-        display: block;
-        height: 108px;
     }
 
 }
