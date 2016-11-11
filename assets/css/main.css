@@ -241,7 +241,7 @@ input {
 }
 .navigation-home ul .main-nav:last-child .login-admin .fa-sign-in{
   font-size: 24px;
-  padding: 0px 0px 0px 10px;
+  padding: 0px 0px 0px 30px;
 }
 .navigation-home ul .main-nav:last-child:hover .signup {
     padding: 10px 24px;
