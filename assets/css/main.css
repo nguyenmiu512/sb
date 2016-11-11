@@ -235,12 +235,15 @@ input {
 .navigation-home ul li ul li:hover {
 }
 
-.navigation-home ul .main-nav:last-child {
+.navigation-home ul .main-nav:last-child .signup{
     border-radius: 20px;
     padding: 10px 24px;
 }
-
-.navigation-home ul .main-nav:last-child:hover {
+.navigation-home ul .main-nav:last-child .login-admin .fa-sign-in{
+  font-size: 24px;
+  padding: 0px 0px 0px 10px;
+}
+.navigation-home ul .main-nav:last-child:hover .signup {
     padding: 10px 24px;
 }
 
@@ -260,11 +263,11 @@ input {
     border: 1px solid #fff;
     padding: 10px;
 }
-.navigation-home ul li.last-child{
+.navigation-home ul li.last-child .signup{
   background-color:#cf1e26;
 }
 .navigation-home ul li.last-child:hover{
-  border:inherit;}
+      border: 1px solid #000;}
 
 .navigation-home ul li:last-child a:hover {
     border: none;
