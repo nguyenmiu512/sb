@@ -1536,10 +1536,23 @@ line-height: 25px;
 .bg-news-blog .navigation-home ul .main-nav.active {
     border: 1px solid #777;
 }
-
-.bg-news-blog .navigation-home ul .main-nav:last-child {
+.bg-news-blog .navigation-home ul .last-child:hover{
+  border: inherit;
+  padding: 11px;
+}
+.bg-news-blog .navigation-home ul .main-nav:last-child .signup {
   border: 1px solid #cf1e26;
     border-radius: 20px;
+}
+.bg-news-blog .navigation-home ul li ul li{
+background-color: #2f2f2f;
+color:#fff;
+}
+.bg-news-blog .navigation-home ul li:hover ul li a{
+  color:#fff ;
+}
+.bg-news-blog .navigation-home ul .main-nav .login-admin .fa-sign-in{
+ color:#000;
 }
 
 .bg-news-blog .navigation-home ul .main-nav:last-child a {
