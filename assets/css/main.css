@@ -187,6 +187,7 @@ input {
     position: relative;
     padding: 11px;
     margin-right: 31px;
+    margin-top: 4px;
 }
 
 .navigation-home ul li:hover {
