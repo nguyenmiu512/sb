@@ -182,7 +182,7 @@ input {
     padding-bottom: 18px;
 }
 .navigation-home ul li.last-child{
-  margin-top: 0px;
+  margin-top: 0px !important;
 }
 .navigation-home ul li.main-nav {
     float: left;
